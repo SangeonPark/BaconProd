@@ -1,0 +1,964 @@
+DEBUG 2018-12-12 10:06:14,253: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:06:14,254: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:06:14,272: 	 Checking credentials
+DEBUG 2018-12-12 10:06:14,272: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:06:14,272: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:06:14,376: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 604794
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:06:14,480: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 604794
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:06:14,480: 	 Proxy valid for 167:59:54 hours
+INFO 2018-12-12 10:06:14,481: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-12 10:06:14,481: 	 Loading CRAB configuration file.
+ERROR 2018-12-12 10:06:24,108: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-12 10:06:24,108: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 84, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-12 10:06:26,144: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:06:26,144: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:06:26,152: 	 Checking credentials
+DEBUG 2018-12-12 10:06:26,152: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:06:26,152: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:06:26,256: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 604782
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:06:26,360: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 604782
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:06:26,361: 	 Proxy valid for 167:59:42 hours
+INFO 2018-12-12 10:06:26,361: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-12 10:06:26,361: 	 Loading CRAB configuration file.
+ERROR 2018-12-12 10:06:26,740: 	 Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-12 10:06:26,740: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 84, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Error while loading CRAB configuration:
+Unable to find a Configuration object instance in file:
+/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab.py
+
+Please refer to https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3CommonErrors#Syntax_error_in_CRAB_configurati
+See the ./crab.log file for more details.
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-12 10:21:52,753: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:21:52,753: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:21:52,762: 	 Checking credentials
+DEBUG 2018-12-12 10:21:52,763: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:21:52,763: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:21:52,867: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 603856
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:21:52,971: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 603856
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:21:52,971: 	 Proxy valid for 167:44:16 hours
+ERROR 2018-12-12 10:21:52,971: 	 CRAB configuration file crab.py not found.
+ERROR 2018-12-12 10:21:52,972: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab.py not found.
+DEBUG 2018-12-12 10:21:58,704: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:21:58,704: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:21:58,712: 	 Checking credentials
+DEBUG 2018-12-12 10:21:58,712: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:21:58,712: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:21:58,816: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 603850
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:21:58,920: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 603850
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:21:58,920: 	 Proxy valid for 167:44:10 hours
+ERROR 2018-12-12 10:21:58,920: 	 CRAB configuration file crab.py not found.
+ERROR 2018-12-12 10:21:58,921: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab.py not found.
+DEBUG 2018-12-12 10:22:00,613: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:22:00,613: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:22:00,620: 	 Checking credentials
+DEBUG 2018-12-12 10:22:00,621: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:22:00,621: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:22:00,724: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 603848
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:00,828: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 603848
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:00,829: 	 Proxy valid for 167:44:08 hours
+ERROR 2018-12-12 10:22:00,829: 	 CRAB configuration file crab.py not found.
+ERROR 2018-12-12 10:22:00,829: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab.py not found.
+DEBUG 2018-12-12 10:22:05,943: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:22:05,944: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:22:05,951: 	 Checking credentials
+DEBUG 2018-12-12 10:22:05,951: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:22:05,951: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:22:06,055: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 603842
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:06,159: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 603842
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:06,159: 	 Proxy valid for 167:44:02 hours
+ERROR 2018-12-12 10:22:06,159: 	 CRAB configuration file crab.py not found.
+ERROR 2018-12-12 10:22:06,160: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab.py not found.
+DEBUG 2018-12-12 10:22:08,693: 	 Executing command: 'submit'
+DEBUG 2018-12-12 10:22:08,693: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-12 10:22:08,700: 	 Checking credentials
+DEBUG 2018-12-12 10:22:08,700: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-12 10:22:08,700: 	 Getting proxy life time left
+DEBUG 2018-12-12 10:22:08,804: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 603840
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:08,908: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 603840
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-12 10:22:08,909: 	 Proxy valid for 167:44:00 hours
+ERROR 2018-12-12 10:22:08,909: 	 CRAB configuration file crab.py not found.
+ERROR 2018-12-12 10:22:08,909: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crab.py not found.
+DEBUG 2018-12-12 11:35:04,723: 	 Executing command: 'kill'
+DEBUG 2018-12-12 11:35:04,724: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+ERROR 2018-12-12 11:35:04,726: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_WJetsToQQ_HT_800toInf_qc19_3j_TuneCP5_13TeV
+ERROR 2018-12-12 11:35:04,726: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 55, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 441, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_WJetsToQQ_HT_800toInf_qc19_3j_TuneCP5_13TeV
+DEBUG 2018-12-14 10:05:53,408: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:05:53,409: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:05:53,418: 	 Checking credentials
+DEBUG 2018-12-14 10:05:53,418: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:53,418: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:05:53,522: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597096
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:53,627: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597095
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:53,627: 	 Proxy lifetime 597096 secs is different from voms extension lifetime 597095 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:53,627: 	 Proxy valid for 165:51:35 hours
+INFO 2018-12-14 10:05:53,627: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:05:53,628: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:05:53,656: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:05:53,656: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:05:53,657: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:05:54,618: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:05:54,618: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:05:54,626: 	 Checking credentials
+DEBUG 2018-12-14 10:05:54,626: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:54,626: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:05:54,730: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597095
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:54,834: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597094
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:54,835: 	 Proxy lifetime 597095 secs is different from voms extension lifetime 597094 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:54,835: 	 Proxy valid for 165:51:34 hours
+INFO 2018-12-14 10:05:54,835: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:05:54,835: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:05:54,843: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:05:54,843: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:05:54,843: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:05:55,858: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:05:55,858: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:05:55,865: 	 Checking credentials
+DEBUG 2018-12-14 10:05:55,866: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:55,866: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:05:55,970: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597094
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:56,074: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597092
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:56,074: 	 Proxy lifetime 597094 secs is different from voms extension lifetime 597092 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:56,074: 	 Proxy valid for 165:51:32 hours
+INFO 2018-12-14 10:05:56,074: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:05:56,074: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:05:56,132: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:05:56,132: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:05:56,132: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:05:57,312: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:05:57,312: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:05:57,319: 	 Checking credentials
+DEBUG 2018-12-14 10:05:57,320: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:57,320: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:05:57,424: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597092
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:57,528: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597091
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:05:57,528: 	 Proxy lifetime 597092 secs is different from voms extension lifetime 597091 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:05:57,528: 	 Proxy valid for 165:51:31 hours
+INFO 2018-12-14 10:05:57,528: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:05:57,529: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:00,568: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:00,568: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:00,568: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:03,135: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:03,135: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:03,142: 	 Checking credentials
+DEBUG 2018-12-14 10:06:03,143: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:03,143: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:03,246: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597086
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:03,350: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597085
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:03,351: 	 Proxy lifetime 597086 secs is different from voms extension lifetime 597085 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:03,351: 	 Proxy valid for 165:51:25 hours
+INFO 2018-12-14 10:06:03,351: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:03,351: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:03,373: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:03,374: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:03,374: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:04,684: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:04,685: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:04,692: 	 Checking credentials
+DEBUG 2018-12-14 10:06:04,692: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:04,693: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:04,796: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597085
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:04,900: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597084
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:04,901: 	 Proxy lifetime 597085 secs is different from voms extension lifetime 597084 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:04,901: 	 Proxy valid for 165:51:24 hours
+INFO 2018-12-14 10:06:04,901: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:04,901: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:04,924: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:04,924: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:04,924: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:06,943: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:06,943: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:06,950: 	 Checking credentials
+DEBUG 2018-12-14 10:06:06,951: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:06,951: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:07,054: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597082
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:07,159: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597081
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:07,159: 	 Proxy lifetime 597082 secs is different from voms extension lifetime 597081 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:07,159: 	 Proxy valid for 165:51:21 hours
+INFO 2018-12-14 10:06:07,159: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:07,160: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:07,205: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:07,206: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:07,206: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:08,917: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:08,917: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:08,925: 	 Checking credentials
+DEBUG 2018-12-14 10:06:08,925: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:08,925: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:09,029: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597081
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:09,133: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597079
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:09,134: 	 Proxy lifetime 597081 secs is different from voms extension lifetime 597079 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:09,134: 	 Proxy valid for 165:51:19 hours
+INFO 2018-12-14 10:06:09,134: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:09,134: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:09,142: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:09,143: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:09,143: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:10,273: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:10,274: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:10,281: 	 Checking credentials
+DEBUG 2018-12-14 10:06:10,281: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:10,281: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:10,385: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597079
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:10,489: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597078
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:10,490: 	 Proxy lifetime 597079 secs is different from voms extension lifetime 597078 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:10,490: 	 Proxy valid for 165:51:18 hours
+INFO 2018-12-14 10:06:10,490: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:10,490: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:10,511: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:10,511: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:10,512: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:11,802: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:11,802: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:11,809: 	 Checking credentials
+DEBUG 2018-12-14 10:06:11,810: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:11,810: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:11,913: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597078
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:12,018: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597077
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:12,018: 	 Proxy lifetime 597078 secs is different from voms extension lifetime 597077 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:12,018: 	 Proxy valid for 165:51:17 hours
+INFO 2018-12-14 10:06:12,018: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:12,018: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:12,027: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:12,027: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:12,028: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:12,889: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:12,889: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:12,897: 	 Checking credentials
+DEBUG 2018-12-14 10:06:12,897: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:12,897: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:13,001: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597077
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:13,105: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597075
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:13,105: 	 Proxy lifetime 597077 secs is different from voms extension lifetime 597075 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:13,105: 	 Proxy valid for 165:51:15 hours
+INFO 2018-12-14 10:06:13,106: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:13,106: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:13,150: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:13,150: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:13,150: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:14,138: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:14,138: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:14,144: 	 Checking credentials
+DEBUG 2018-12-14 10:06:14,144: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:14,144: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:14,247: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597075
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:14,350: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597074
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:14,350: 	 Proxy lifetime 597075 secs is different from voms extension lifetime 597074 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:14,350: 	 Proxy valid for 165:51:14 hours
+INFO 2018-12-14 10:06:14,351: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:14,351: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:14,358: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:14,358: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:14,359: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2018-12-14 10:06:15,290: 	 Executing command: 'submit'
+DEBUG 2018-12-14 10:06:15,291: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2018-12-14 10:06:15,298: 	 Checking credentials
+DEBUG 2018-12-14 10:06:15,299: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:15,299: 	 Getting proxy life time left
+DEBUG 2018-12-14 10:06:15,403: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 597074
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:15,507: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 597073
+
+ error: 
+ retcode : 0
+DEBUG 2018-12-14 10:06:15,507: 	 Proxy lifetime 597074 secs is different from voms extension lifetime 597073 secs for proxy: /tmp/x509up_u49845
+DEBUG 2018-12-14 10:06:15,507: 	 Proxy valid for 165:51:13 hours
+INFO 2018-12-14 10:06:15,507: 	 Will use CRAB configuration file crab.py
+DEBUG 2018-12-14 10:06:15,508: 	 Loading CRAB configuration file.
+DEBUG 2018-12-14 10:06:15,515: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2018-12-14 10:06:15,515: 	 Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+ERROR 2018-12-14 10:06:15,516: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 89, in loadConfig
+    raise ConfigurationException(configmsg)
+ConfigurationException: Invalid CRAB configuration:
+ when ignoreLocality is set a valid site white list must be specified using the Site.whitelist parameter
+The documentation about the CRAB configuration file can be found in https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile
+DEBUG 2019-01-07 14:01:28,725: 	 Executing command: 'kill'
+DEBUG 2019-01-07 14:01:28,725: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+ERROR 2019-01-07 14:01:28,727: 	 Error: crab_projects/crab_WJetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+ERROR 2019-01-07 14:01:28,727: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 55, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects/crab_WJetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+DEBUG 2019-01-07 14:02:45,157: 	 Executing command: 'kill'
+DEBUG 2019-01-07 14:02:45,159: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+ERROR 2019-01-07 14:02:45,165: 	 Error: crab_projects/crab_W1JetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+ERROR 2019-01-07 14:02:45,165: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 55, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects/crab_W1JetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+DEBUG 2019-01-07 14:03:37,260: 	 Executing command: 'kill'
+DEBUG 2019-01-07 14:03:37,261: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+ERROR 2019-01-07 14:03:37,263: 	 Error: crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+ERROR 2019-01-07 14:03:37,264: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/kill.py", line 55, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 575, in validateOptions
+    raise ConfigurationException(msg)
+ConfigurationException: [91mError[0m: crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF is not a valid CRAB project directory.
+DEBUG 2019-01-07 14:07:28,022: 	 Executing command: 'status'
+DEBUG 2019-01-07 14:07:28,023: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+ERROR 2019-01-07 14:07:28,026: 	 Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF
+ERROR 2019-01-07 14:07:28,026: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 39, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 262, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/status.py", line 1022, in validateOptions
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 580, in validateOptions
+    self.loadLocalCache()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 441, in loadLocalCache
+    raise ex
+CachefileNotFoundException: Cannot find .requestcache file in CRAB project directory /uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF
+DEBUG 2019-01-07 15:47:41,206: 	 Executing command: 'submit'
+DEBUG 2019-01-07 15:47:41,208: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2019-01-07 15:47:41,231: 	 Checking credentials
+DEBUG 2019-01-07 15:47:41,232: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2019-01-07 15:47:41,232: 	 Getting proxy life time left
+DEBUG 2019-01-07 15:47:41,336: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 604735
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-07 15:47:41,440: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 604735
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-07 15:47:41,441: 	 Proxy valid for 167:58:55 hours
+INFO 2019-01-07 15:47:41,441: 	 Will use CRAB configuration file crab.py
+DEBUG 2019-01-07 15:47:41,441: 	 Loading CRAB configuration file.
+DEBUG 2019-01-07 15:47:41,450: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-01-07 15:47:41,450: 	 Working area '/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF' already exists 
+Please change the requestName in the config file
+ERROR 2019-01-07 15:47:41,450: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 307, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_W3JetsToLNu_TuneCP5_13TeV_withPF' already exists 
+Please change the requestName in the config file
+DEBUG 2019-01-07 15:48:23,601: 	 Executing command: 'submit'
+DEBUG 2019-01-07 15:48:23,601: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2019-01-07 15:48:23,609: 	 Checking credentials
+DEBUG 2019-01-07 15:48:23,609: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2019-01-07 15:48:23,609: 	 Getting proxy life time left
+DEBUG 2019-01-07 15:48:23,713: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 604693
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-07 15:48:23,817: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 604693
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-07 15:48:23,818: 	 Proxy valid for 167:58:13 hours
+INFO 2019-01-07 15:48:23,818: 	 Will use CRAB configuration file crab.py
+DEBUG 2019-01-07 15:48:23,818: 	 Loading CRAB configuration file.
+DEBUG 2019-01-07 15:48:23,825: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+ERROR 2019-01-07 15:48:23,826: 	 Working area '/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_WJetsToLNu_TuneCP5_13TeV' already exists 
+Please change the requestName in the config file
+ERROR 2019-01-07 15:48:23,826: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 307, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 404, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/uscms_data/d3/cmantill/bacon/CMSSW_10_2_6/src/BaconProd/Ntupler/crab/crab_projects/crab_WJetsToLNu_TuneCP5_13TeV' already exists 
+Please change the requestName in the config file
+DEBUG 2019-01-12 12:39:08,202: 	 Executing command: 'submit'
+DEBUG 2019-01-12 12:39:08,202: 	 Found CRAB cache file /uscms/home/cmantill/.crab3
+DEBUG 2019-01-12 12:39:08,212: 	 Checking credentials
+DEBUG 2019-01-12 12:39:08,213: 	 Found proxy file /tmp/x509up_u49845
+DEBUG 2019-01-12 12:39:08,213: 	 Getting proxy life time left
+DEBUG 2019-01-12 12:39:08,316: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -timeleft
+ output : 604574
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-12 12:39:08,420: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u49845 -actimeleft
+ output : 604574
+
+ error: 
+ retcode : 0
+DEBUG 2019-01-12 12:39:08,421: 	 Proxy valid for 167:56:14 hours
+ERROR 2019-01-12 12:39:08,421: 	 CRAB configuration file crabConfig.py not found.
+ERROR 2019-01-12 12:39:08,422: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 303, in __init__
+    self.loadConfig(self.options.config, self.args)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1812/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 46, in loadConfig
+    raise ConfigurationException("CRAB configuration file %s not found." % (configname))
+ConfigurationException: CRAB configuration file crabConfig.py not found.
