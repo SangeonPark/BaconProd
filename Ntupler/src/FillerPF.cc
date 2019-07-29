@@ -202,7 +202,6 @@ void FillerPF::fillMiniAOD(TClonesArray *array,TClonesArray *iVtxCol,
     pPF->pup     = itPF->puppiWeight();
     if (itPF->hasTrackDetails()) {
       pPF->vtxChi2 = itPF->vertexChi2();
-      //pPF->pup     = itPF->puppiWeight();
       if(itPF->charge() == 0) continue;
       
       const reco::Track & pseudoTrack =  itPF->pseudoTrack();
