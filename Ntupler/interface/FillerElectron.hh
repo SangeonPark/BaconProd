@@ -82,21 +82,26 @@ namespace baconhep
       std::string fPuppiNoLepName; 
       bool fUsePuppi;
 
-      // PF cluster isolation info (not in AOD)
-      edm::InputTag fEcalPFClusterIsoMapTag;
-      edm::InputTag fHcalPFClusterIsoMapTag;
-      edm::InputTag fEleMediumIdMapTag;
-      edm::InputTag fEleTightIdMapTag;
-      edm::InputTag fMVAValuesMapTag;
-      edm::InputTag fMVACatsMapTag;
-      bool fSecondMVA;
-      edm::InputTag fEleMediumIdIsoMapTag;
-      edm::InputTag fEleTightIdIsoMapTag;
-      edm::InputTag fMVAValuesIsoMapTag;
-      edm::InputTag fMVACatsIsoMapTag;
+      //std::string fMVAV2Iso;
+      //std::string fMVAV2NoIso;
+      //std::string fMVA;
+      //std::string fMediumMVAIso;
+      //std::string fTightMVAIso;
+      //std::string fMVAIso;
+      //std::string fMVAHZZ;
+      //bool fSecondMVA;
+      //bool fStoreHZZMVA;
+      std::string fMVASpring16;
+      std::string fMVAFall17V1Iso;
+      std::string fMVAFall17V1NoIso;
+      std::string fMVAFall17V2Iso;
+      std::string fMVAFall17V2NoIso;
+      std::string fMVASpring16HZZ;
+      std::string fMediumMVA;
+      std::string fTightMVA;
       bool fUseTO;
       bool fUseAOD;
-
+      
       edm::EDGetTokenT<reco::GsfElectronCollection>  fTokEleName;
       edm::EDGetTokenT<pat::ElectronCollection>      fTokPatEleName;
       edm::EDGetTokenT<reco::BeamSpot>               fTokBSName;
@@ -108,16 +113,6 @@ namespace baconhep
       edm::EDGetTokenT<reco::TrackCollection>        fTokTrackName;
       edm::EDGetTokenT<reco::ConversionCollection>   fTokConvName;
       edm::EDGetTokenT<reco::SuperClusterCollection> fTokSCName;
-      edm::EDGetTokenT<edm::ValueMap<float> > fTokEcalPFClusterIsoMap;
-      edm::EDGetTokenT<edm::ValueMap<float> > fTokHcalPFClusterIsoMap;
-      edm::EDGetTokenT<edm::ValueMap<bool> >  fTokEleMediumIdMap;
-      edm::EDGetTokenT<edm::ValueMap<bool> >  fTokEleTightIdMap;
-      edm::EDGetTokenT<edm::ValueMap<float> > fTokEleMVAValuesMap;
-      edm::EDGetTokenT<edm::ValueMap<int> >   fTokEleMVACatsMap;
-      edm::EDGetTokenT<edm::ValueMap<bool> >  fTokEleMediumIdIsoMap;
-      edm::EDGetTokenT<edm::ValueMap<bool> >  fTokEleTightIdIsoMap;
-      edm::EDGetTokenT<edm::ValueMap<float> > fTokEleMVAValuesIsoMap;
-      edm::EDGetTokenT<edm::ValueMap<int> >   fTokEleMVACatsIsoMap;
   };
 }
 #endif

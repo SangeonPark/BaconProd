@@ -31,10 +31,9 @@ FillerPhoton::FillerPhoton(const edm::ParameterSet &iConfig, const bool useAOD,e
   fEleName           (iConfig.getUntrackedParameter<std::string>("edmElectronName","gedGsfElectrons")),
   fConvName          (iConfig.getUntrackedParameter<std::string>("edmConversionName","allConversions")),
   fSCName            (iConfig.getUntrackedParameter<edm::InputTag>("edmSCName")),//,"particleFlowEGamma")),
-  fChHadIsoMapTag    (iConfig.getUntrackedParameter<edm::InputTag>("edmChHadIsoMapTag")),
-  fNeuHadIsoMapTag   (iConfig.getUntrackedParameter<edm::InputTag>("edmNeuHadIsoMapTag")),
-  fGammaIsoMapTag    (iConfig.getUntrackedParameter<edm::InputTag>("edmGammaIsoMapTag")),
-  fPhoMVAMapTag      (iConfig.getUntrackedParameter<edm::InputTag>("edmPhoMVAIdTag")),
+  fMVASpring16       (iConfig.getUntrackedParameter<std::string>("edmPhoMVASpring16")),
+  fMVAFall17V1       (iConfig.getUntrackedParameter<std::string>("edmPhoMVAFall17V1")),
+  fMVAFall17V2       (iConfig.getUntrackedParameter<std::string>("edmPhoMVAFall17V2")),
   fUseTO             (iConfig.getUntrackedParameter<bool>("useTriggerObject",false)),
   fUseAOD            (useAOD)
 {
@@ -46,10 +45,6 @@ FillerPhoton::FillerPhoton(const edm::ParameterSet &iConfig, const bool useAOD,e
   fTokEleName    =  iC.consumes<reco::GsfElectronCollection>(fEleName);
   fTokConvName   =  iC.consumes<reco::ConversionCollection>(fConvName);
   fTokSCName     =  iC.consumes<reco::SuperClusterCollection>(fSCName);
-  fTokChHadIsoMapTag  =  iC.consumes<edm::ValueMap<float> >(fChHadIsoMapTag);
-  fTokNeuHadIsoMapTag =  iC.consumes<edm::ValueMap<float> >(fNeuHadIsoMapTag);
-  fTokGammaIsoMapTag  =  iC.consumes<edm::ValueMap<float> >(fGammaIsoMapTag);
-  fTokPhoMVAMapTag    =  iC.consumes<edm::ValueMap<float> >(fPhoMVAMapTag);
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -105,23 +100,6 @@ void FillerPhoton::fill(TClonesArray *array,
   assert(hSCProduct.isValid());
   const reco::SuperClusterCollection *scCol = hSCProduct.product();
 
-  // Get isolation value maps (EGM recommendations currently not in AOD/MINIAOD)
-  
-  edm::Handle<edm::ValueMap<float> > hChHadIsoMap;
-  iEvent.getByToken(fTokChHadIsoMapTag, hChHadIsoMap);
-  assert(hChHadIsoMap.isValid());
-
-  edm::Handle<edm::ValueMap<float> > hNeuHadIsoMap;
-  iEvent.getByToken(fTokNeuHadIsoMapTag, hNeuHadIsoMap);
-  assert(hNeuHadIsoMap.isValid());
-
-  edm::Handle<edm::ValueMap<float> > hGammaIsoMap;
-  iEvent.getByToken(fTokGammaIsoMapTag, hGammaIsoMap);
-  assert(hGammaIsoMap.isValid());
-
-  edm::Handle<edm::ValueMap<float> > hPhoMVAMap;
-  iEvent.getByToken(fTokPhoMVAMapTag, hPhoMVAMap);
-  assert(hPhoMVAMap.isValid());
 
   for(reco::PhotonCollection::const_iterator itPho = photonCol->begin(); itPho!=photonCol->end(); ++itPho) {
     
@@ -159,17 +137,12 @@ void FillerPhoton::fill(TClonesArray *array,
     pPhoton->trkIso  = itPho->trkSumPtHollowConeDR04();
     pPhoton->ecalIso = itPho->ecalRecHitSumEtConeDR04();
     pPhoton->hcalIso = itPho->hcalTowerSumEtConeDR04();
-
-    pPhoton->chHadIso  = (*hChHadIsoMap)[phoBaseRef];
-    pPhoton->gammaIso  = (*hGammaIsoMap)[phoBaseRef];
-    pPhoton->neuHadIso = (*hNeuHadIsoMap)[phoBaseRef];
-    
+ 
     //Isolation for Photon MVA
 //    pPhoton->chHadIso03SelVtx  = -1;
 //    pPhoton->chHadIso03WstVtx  = -1;
 //    computeVtxIso(*itPho,*pfCandCol,*vtxCol,
 //		  pPhoton->chHadIso03SelVtx,pPhoton->chHadIso03WstVtx);
-
 
     //
     // Identification
@@ -207,10 +180,7 @@ void FillerPhoton::fill(TClonesArray *array,
     pPhoton->hasPixelSeed     = itPho->hasPixelSeed();
     pPhoton->isConv           = ConversionTools::hasMatchedPromptElectron(itPho->superCluster(), hEleProduct, hConvProduct, bs->position(), 2.0, 1e-6, 0);
     pPhoton->passElectronVeto = !(pPhoton->isConv); // here for backwards compatibility
-
-    // Photon MVA ID: https://twiki.cern.ch/twiki/bin/view/CMS/MultivariatePhotonIdentificationRun2
-    pPhoton->mva = (*hPhoMVAMap)[phoBaseRef]; //(!) fPhotonMVA->mvaValue((*itPho),lazyTools,*hRho,pPhoton->gammaIso03,pPhoton->chHadIso03SelVtx,pPhoton->chHadIso03WstVtx,lRR);
-    
+ 
     if(fUseTO) pPhoton->hltMatchBits = TriggerTools::matchHLT(pPhoton->eta, pPhoton->phi, triggerRecords, triggerEvent);
   }
 }
@@ -248,11 +218,6 @@ void FillerPhoton::fill(TClonesArray *array,
   iEvent.getByToken(fTokGammaIsoMapTag, hGammaIsoMap);
   assert(hGammaIsoMap.isValid());
   */
-  edm::Handle<edm::ValueMap<float> > hPhoMVAMap;
-  if(fPhoMVAMapTag.label().size() > 0) {
-    iEvent.getByToken(fTokPhoMVAMapTag, hPhoMVAMap);
-    assert(hPhoMVAMap.isValid());
-  }
 
   for(pat::PhotonCollection::const_iterator itPho = photonCol->begin(); itPho!=photonCol->end(); ++itPho) {
 
@@ -282,7 +247,23 @@ void FillerPhoton::fill(TClonesArray *array,
     pPhoton->scEt  = (sc->energy())*(sc->position().Rho())/(sc->position().R());
     pPhoton->scEta = sc->eta();
     pPhoton->scPhi = sc->phi();
-
+    
+    auto corrP4  = itPho->p4() * itPho->userFloat("ecalEnergyPostCorr") / itPho->energy();
+    pPhoton->calibPt = corrP4.Pt();
+    pPhoton->calibE = corrP4.E();
+    pPhoton->ecalEnergyErrPostCorr = itPho->userFloat("ecalEnergyErrPostCorr");
+    pPhoton->energyScaleStatUp = itPho->userFloat("energyScaleStatUp");
+    pPhoton->energyScaleStatDown = itPho->userFloat("energyScaleStatDown");
+    pPhoton->energyScaleSystUp = itPho->userFloat("energyScaleSystUp");
+    pPhoton->energyScaleSystDown = itPho->userFloat("energyScaleSystDown");
+    pPhoton->energyScaleGainUp = itPho->userFloat("energyScaleGainUp");
+    pPhoton->energyScaleGainDown = itPho->userFloat("energyScaleGainDown");
+    pPhoton->energySigmaRhoUp = itPho->userFloat("energySigmaRhoUp");
+    pPhoton->energySigmaRhoDown = itPho->userFloat("energySigmaRhoDown");
+    pPhoton->energySigmaPhiUp = itPho->userFloat("energySigmaPhiUp");
+    pPhoton->energySigmaPhiDown = itPho->userFloat("energySigmaPhiDown");
+    
+    pPhoton->eRes = itPho->getCorrectedEnergyError(itPho->getCandidateP4type())/itPho->getCorrectedEnergy(itPho->getCandidateP4type());
 
     //
     // Isolation
@@ -305,11 +286,12 @@ void FillerPhoton::fill(TClonesArray *array,
     //
     // Identification
     //==============================
-    pPhoton->hovere   = itPho->hadronicOverEm();
-    pPhoton->sthovere = itPho->hadTowOverEm();
-    pPhoton->sieie    = itPho->full5x5_sigmaIetaIeta();
-    pPhoton->sipip    = 0;  // (!) todo (lazy tools)
-    pPhoton->r9       = itPho->r9();  // (!) change to full5x5 after 7_2_0 MC?
+    pPhoton->hovere     = itPho->hadronicOverEm();
+    pPhoton->sthovere   = itPho->hadTowOverEm();
+    pPhoton->sieie      = itPho->full5x5_sigmaIetaIeta();
+    pPhoton->sipip      = 0;  // (!) todo (lazy tools)
+    pPhoton->r9         = itPho->r9();  // (!) change to full5x5 after 7_2_0 MC?
+    pPhoton->r9_full5x5 = itPho->full5x5_r9();
 
     pPhoton->fiducialBits=0;
     if(itPho->isEB())        pPhoton->fiducialBits |= kIsEB;
@@ -340,7 +322,19 @@ void FillerPhoton::fill(TClonesArray *array,
     pPhoton->passElectronVeto = itPho->passElectronVeto(); // here for backwards compatibility
 
     // Photon MVA ID: https://twiki.cern.ch/twiki/bin/view/CMS/MultivariatePhotonIdentificationRun2
-    if(fPhoMVAMapTag.label().size() > 0) pPhoton->mva = (*hPhoMVAMap)[phoBaseRef];//itPho->photonID("egmPhotonIDs:mvaPhoID-Spring15-25ns-nonTrig-V2-wp90");
+    //pPhoton->mva = itPho->userFloat(fMVA+"Values"); 
+    //pPhoton->mvaCat = itPho->userInt(fMVA+"Categories"); 
+    //
+    //// v2 photon MVA
+    //pPhoton->mvaV2 = itPho->userFloat(fMVAV2+"Values");
+    //pPhoton->mvaV2Cat = itPho->userInt(fMVAV2+"Categories");
+    
+    pPhoton->mvaSpring16    = itPho->userFloat(fMVASpring16+"Values");
+    pPhoton->mvaSpring16Cat = itPho->userInt(fMVASpring16+"Categories"); 
+    pPhoton->mvaFall17V1    = itPho->userFloat(fMVAFall17V1+"Values");
+    pPhoton->mvaFall17V1Cat = itPho->userInt(fMVAFall17V1+"Categories");
+    pPhoton->mvaFall17V2    = itPho->userFloat(fMVAFall17V2+"Values");
+    pPhoton->mvaFall17V2Cat = itPho->userInt(fMVAFall17V2+"Categories");
 
     if(fUseTO) pPhoton->hltMatchBits = TriggerTools::matchHLT(pPhoton->eta, pPhoton->phi, triggerRecords, triggerObjects);
   }

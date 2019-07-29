@@ -78,19 +78,12 @@ namespace baconhep
       edm::EDGetTokenT<reco::GsfElectronCollection>  fTokEleName;
       edm::EDGetTokenT<reco::ConversionCollection>   fTokConvName;
       edm::EDGetTokenT<reco::SuperClusterCollection> fTokSCName;
-      edm::EDGetTokenT<edm::ValueMap<float> >        fTokChHadIsoMapTag;
-      edm::EDGetTokenT<edm::ValueMap<float> >        fTokNeuHadIsoMapTag;
-      edm::EDGetTokenT<edm::ValueMap<float> >        fTokGammaIsoMapTag;
-      edm::EDGetTokenT<edm::ValueMap<float> >        fTokPhoMVAMapTag;
       
-      // isolation info (EGM recommendation currently not in AOD/MINIAOD)
-      edm::InputTag fChHadIsoMapTag;
-      edm::InputTag fNeuHadIsoMapTag;
-      edm::InputTag fGammaIsoMapTag;
-      edm::InputTag fPhoMVAMapTag;
+      std::string fMVASpring16;
+      std::string fMVAFall17V1;
+      std::string fMVAFall17V2;
       bool fUseTO;
       bool fUseAOD;
- //      PhotonMVACalculator *fPhotonMVA; 
   };
 }
 #endif
